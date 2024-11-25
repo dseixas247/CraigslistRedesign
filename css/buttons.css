@@ -1,0 +1,18 @@
+.button a{
+    color:white;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+
+    padding: 10px;
+    border-radius: 5px;
+    border: 0; 
+}
+
+#regularButton{
+    background-color: #6a2983;
+}
+
+#dangerButton{
+    background-color: #d92121;
+}
