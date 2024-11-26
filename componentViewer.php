@@ -8,6 +8,11 @@
         echo "<br><br>";
         echo dangerButton("", "botão de perigo");
     ?>
+    <h1> Searchbar </h1>
+    <?php
+        require_once 'components/searchbar.php';
+        echo searchbar();
+    ?>
 </div>
 
 <?php include_once 'footer.php'; ?>
