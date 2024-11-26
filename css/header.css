@@ -1,0 +1,42 @@
+#navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+ul {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    background-color: #f4f1f4;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    width: fit-content;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+#logoImage {
+    height: 40px;
+    margin-right: 10px;
+}
+
+#logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: none;
+    color: #6a2983;
+}
+
+#left {
+    margin-right: auto;
+}
