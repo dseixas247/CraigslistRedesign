@@ -12,6 +12,7 @@ session_start();
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/searchbar.css">
 
     <title>Craigslist</title>
 
