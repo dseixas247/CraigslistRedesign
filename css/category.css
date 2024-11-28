@@ -1,0 +1,28 @@
+.category {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 10px;
+    border: 0; 
+}
+
+.subCategory {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.categoryItem {
+    color:white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 0; 
+    background-color: #6a2983;
+}
