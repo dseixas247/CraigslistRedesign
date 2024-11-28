@@ -11,6 +11,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://kit.fontawesome.com/54b79dfd71.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/buttons.css">
@@ -34,7 +36,7 @@
 
             <?php
                 if(isset($_SESSION["type"])){
-                    if($_SESSION["type"] == "Admin"){
+                    if($_SESSION["type"] == "admin"){
                         echo("<li>"); 
                         echo regularButton("backend.php","Gerir"); 
                         echo("</li>");
@@ -42,23 +44,23 @@
                         echo regularButton("postHandlers/logoutUser.php","Logout"); 
                         echo("</li>");
                     }
-                    else if($_SESSION["type"] == "Client"){
+                    else if($_SESSION["type"] == "client"){
                         echo("<li>"); 
                         echo regularButton("createPosting.php","Criar Anúncio"); 
                         echo("</li>");
                         echo("<li>"); 
-                        echo regularButton("favorites.php","Favoritos"); 
+                        echo favoritesButton("favorites.php"); 
                         echo("</li>");
                         echo("<li>"); 
-                        echo regularButton("chat.php","Chat"); 
+                        echo chatButton("chat.php"); 
                         echo("</li>");
                         echo("<li>"); 
-                        echo regularButton("profile.php","Minha Conta"); 
+                        echo userButton("profile.php"); 
                         echo("</li>");
                     }
                 }else{
                     echo("<li>"); 
-                    echo regularButton("login.php","Login"); 
+                    echo userButton("login.php"); 
                     echo("</li>");
                 }
             ?>

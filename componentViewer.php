@@ -8,6 +8,12 @@
         echo "<br><br>";
         echo dangerButton("", "botão de perigo");
         echo "<br><br>";
+        echo userButton("");
+        echo "<br><br>";
+        echo favoritesButton("");
+        echo "<br><br>";
+        echo chatButton("");
+        echo "<br><br>";
     ?>
 
     <h1> Searchbar </h1>
