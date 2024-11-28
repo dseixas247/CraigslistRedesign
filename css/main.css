@@ -2,6 +2,7 @@ html, body {
     display: flex;
     flex-direction: column;
     font-family: "Open Sans","Helvetica","Arial",sans-serif;
+    margin: 0px;
 }
 
 h1 {
