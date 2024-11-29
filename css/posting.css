@@ -1,0 +1,71 @@
+.posting {
+    background-color: #6a2983;
+    padding: 10px 10px 0px 10px;
+    margin: 10px;
+    border: 0px;
+    border-radius: 10px;
+    width: 15vw;
+}
+
+#content {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15vw;
+    background-color: #6a2983;
+}
+
+#itemImage {
+    width: 15vw;
+    background-color: #f3f3f3;
+    border: 0px;
+    border-radius: 10px;
+}
+
+#itemPrice {
+    color: white;
+    font-size: large;
+    align-self: baseline;
+    padding: 5px;
+    margin-bottom: -30.4px;
+    z-index: 200;
+    border: 0px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#itemName {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 15vw;
+    word-wrap: break-word;
+
+}
+
+#actions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: solid 2px #f3f3f3;
+}
+
+#view {
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
+
+#edit {
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
+
+#delete {
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/searchbar.css">
     <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/posting.css">
 
     <title>Craigslist</title>
 
