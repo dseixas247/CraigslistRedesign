@@ -28,6 +28,14 @@
         require_once 'components/category.php';
         echo category("titulo da categoria", ["item1", "item2", "item3", "item4", "item5", "item6", "item7"]);
     ?>
+
+    <h1> Anuncio </h1>
+    <?php
+        $examplePosting = array("id"=>"1", "name"=>"hbsdvuhfbghasbdgasgsbdgagjhjgfgjgjkbasbgjgbagbjf", "image"=>"placeholder.png", "price"=>"12,99");
+        require_once 'components/posting.php';
+        echo posting($examplePosting);
+        echo postingWithActions($examplePosting);
+    ?>
 </div>
 
 <?php include_once 'footer.php'; ?>
