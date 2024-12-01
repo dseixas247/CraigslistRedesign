@@ -26,7 +26,7 @@
 
 <body>
 
-    <div id="navbar">
+    <nav id="navbar">
 
         <ul>
             
@@ -68,6 +68,7 @@
     
             <li><?php echo regularButton("","PT")?></li>  
             <li><?php echo regularButton("","Portugal")?></li>
-        </ul>   
 
-    </div>
+        </ul>   
+        
+    </nav>

@@ -1,3 +1,12 @@
+:root {
+    --mainAccent: #6A2983;
+    --secondaryAccent: #945ea9;
+    --darkerAccent: #49225B;
+    --mainBackground: #F5EBFA;
+    --darkerBackground: #E7DBEF;
+    --textLight: #FFFFFF;
+}
+
 html, body {
     display: flex;
     flex-direction: column;
@@ -5,12 +14,25 @@ html, body {
     margin: 0px;
 }
 
-h1 {
+h1, h2{
+    color: var(--mainAccent);
+    font-weight: 750;
     margin-top: 0px;
 }
 
-h2 {
-    margin-top: 0px;
+::placeholder {
+    color: var(--mainAccent);
+    opacity: 0.6;
+}
+
+input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    background-color: var(--mainAccent);
+    -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar {
@@ -18,15 +40,24 @@ h2 {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f3f3f3; 
+    background: var(--mainBackground); 
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #6a2983; 
+    background: var(--secondaryAccent); 
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #6a2983; 
+    background: var(--mainAccent);
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30vh;
+    background-image: linear-gradient(45deg, var(--mainAccent), var(--mainBackground));
 }
