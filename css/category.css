@@ -1,7 +1,6 @@
 .category {
     display: flex;
     flex-direction: column;
-    background-color: #f3f3f3;
     padding: 10px;
     margin: 8px;
     border-radius: 10px;
@@ -11,7 +10,12 @@
 .subCategory {
     display: flex;
     flex-direction: row;
+    align-items: center;
     overflow-x: scroll;
+    padding: 10px;
+    background-color: #f5ebfa;
+    border: 0px;
+    border-radius: 10px;
 }
 
 .categoryItem {
@@ -20,9 +24,13 @@
     font-size: large;
     font-weight: bold;
 
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
     margin: 10px;
     border-radius: 5px;
     border: 0; 
-    background-color: #6a2983;
+    height: 10vh;
+    text-align: center;
+    align-content: center;
+
+    background-color: #a56abd;
 }
