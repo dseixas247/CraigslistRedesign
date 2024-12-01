@@ -1,5 +1,5 @@
 .button a{
-    color:white;
+    color: var(--textLight);
     text-decoration: none;
     font-size: medium;
     font-weight: bold;
@@ -10,7 +10,7 @@
 }
 
 #regularButton{
-    background-color: #6a2983;
+    background-color: var(--mainAccent);
 }
 
 #dangerButton{

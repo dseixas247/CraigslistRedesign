@@ -15,7 +15,7 @@
 }
 
 #searchInput {
-    color: #6a2983;
+    color: var(--mainAccent);
     text-decoration: none;
     font-size: large;
     font-weight: bold;
@@ -31,7 +31,7 @@
 }
 
 #regionInput {
-    color: whITE;
+    color: var(--textLight);
     text-decoration: none;
     font-size: large;
     font-weight: bold;
@@ -40,7 +40,11 @@
     padding: 9.6px;
     border: 0;
     border-radius: 0px 5px 5px 0px;
-    background-color: #a56abd
+    background-color: var(--secondaryAccent);
+}
+
+#regionInput:hover {
+    cursor: pointer;
 }
 
 #regionInput:focus {
@@ -48,7 +52,7 @@
 }
 
 #searchButton {
-    color:white;
+    color: var(--textLight);
     text-decoration: none;
     font-size: large;
     font-weight: bold;
@@ -57,5 +61,9 @@
     margin: 10px;
     border-radius: 5px;
     border: 0; 
-    background-color: #6a2983;
+    background-color: var(--mainAccent);
+}
+
+#searchButton:hover {
+    cursor: pointer;
 }

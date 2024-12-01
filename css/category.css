@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-    margin: 8px;
+    margin: 20px;
+    margin-bottom: 40px;
     border-radius: 10px;
     border: 0; 
 }
@@ -13,13 +14,13 @@
     align-items: center;
     overflow-x: scroll;
     padding: 10px;
-    background-color: #f5ebfa;
+    background-color: var(--mainBackground);
     border: 0px;
     border-radius: 10px;
 }
 
 .categoryItem {
-    color:white;
+    color: var(--textLight);
     text-decoration: none;
     font-size: large;
     font-weight: bold;
@@ -32,5 +33,5 @@
     text-align: center;
     align-content: center;
 
-    background-color: #a56abd;
+    background-color: var(--secondaryAccent);
 }

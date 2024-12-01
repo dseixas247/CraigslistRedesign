@@ -1,5 +1,5 @@
 .posting {
-    background-color: #6a2983;
+    background-color: var(--secondaryAccent);
     padding: 10px 10px 0px 10px;
     margin: 10px;
     border: 0px;
@@ -13,18 +13,18 @@
     flex-direction: column;
     align-items: center;
     width: 15vw;
-    background-color: #6a2983;
+    background-color: var(--mainAccent);
 }
 
 #itemImage {
     width: 15vw;
-    background-color: #f3f3f3;
+    background-color: var(--mainBackground);
     border: 0px;
     border-radius: 10px;
 }
 
 #itemPrice {
-    color: white;
+    color: var(--textLight);
     font-size: large;
     align-self: baseline;
     padding: 5px;
@@ -36,7 +36,7 @@
 }
 
 #itemName {
-    color: white;
+    color: var(--textLight);
     margin-top: 10px;
     margin-bottom: 10px;
     width: 15vw;
@@ -49,23 +49,23 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-top: solid 2px #f3f3f3;
+    border-top: solid 2px var(--mainBackground);
 }
 
 #view {
     margin: 5px;
     padding: 5px;
-    color: white;
+    color: var(--textLight);
 }
 
 #edit {
     margin: 5px;
     padding: 5px;
-    color: white;
+    color: var(--textLight);
 }
 
 #delete {
     margin: 5px;
     padding: 5px;
-    color: white;
+    color: var(--textLight);
 }

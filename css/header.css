@@ -10,7 +10,7 @@ ul {
     flex-direction: row;
     align-items: center;
     list-style-type: none;
-    background-color: #f5ebfa;
+    background-color: var(--mainBackground);
     width: 100%;
     margin: 0;
     padding: 0;
@@ -34,7 +34,7 @@ li {
     font-size: xx-large;
     font-weight: bold;
     text-decoration: none;
-    color: #6a2983;
+    color: var(--mainAccent);
 }
 
 #left {
