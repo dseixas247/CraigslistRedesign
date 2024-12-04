@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     width: 15vw;
-    background-color: var(--mainAccent);
+    background-color: var(--secondaryAccent);
 }
 
 #itemImage {

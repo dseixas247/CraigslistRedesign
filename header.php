@@ -26,49 +26,53 @@
 
 <body>
 
-    <nav id="navbar">
+    <header>
 
-        <ul>
-            
-            <li id="left">
-                <img id="logoImage" src="craigslistImages\craigslist_logo.png" alt="Craigslist Logo">
-                <a id="logo" href="index.php">Craigslist</a>
-            </li>
+        <nav id="navbar">
 
-            <?php
-                if(isset($_SESSION["type"])){
-                    if($_SESSION["type"] == "admin"){
+            <ul>
+                
+                <li id="left">
+                    <img id="logoImage" src="craigslistImages\craigslist_logo.png" alt="Craigslist Logo">
+                    <a id="logo" href="index.php">Craigslist</a>
+                </li>
+
+                <?php
+                    if(isset($_SESSION["type"])){
+                        if($_SESSION["type"] == "admin"){
+                            echo("<li>"); 
+                            echo regularButton("backend.php","Gerir"); 
+                            echo("</li>");
+                            echo("<li>"); 
+                            echo regularButton("postHandlers/logoutUser.php","Logout"); 
+                            echo("</li>");
+                        }
+                        else if($_SESSION["type"] == "client"){
+                            echo("<li>"); 
+                            echo regularButton("createPosting.php","Criar Anúncio"); 
+                            echo("</li>");
+                            echo("<li>"); 
+                            echo favoritesButton("favorites.php"); 
+                            echo("</li>");
+                            echo("<li>"); 
+                            echo chatButton("chat.php"); 
+                            echo("</li>");
+                            echo("<li>"); 
+                            echo userButton("profile.php"); 
+                            echo("</li>");
+                        }
+                    }else{
                         echo("<li>"); 
-                        echo regularButton("backend.php","Gerir"); 
-                        echo("</li>");
-                        echo("<li>"); 
-                        echo regularButton("postHandlers/logoutUser.php","Logout"); 
+                        echo userButton("login.php"); 
                         echo("</li>");
                     }
-                    else if($_SESSION["type"] == "client"){
-                        echo("<li>"); 
-                        echo regularButton("createPosting.php","Criar Anúncio"); 
-                        echo("</li>");
-                        echo("<li>"); 
-                        echo favoritesButton("favorites.php"); 
-                        echo("</li>");
-                        echo("<li>"); 
-                        echo chatButton("chat.php"); 
-                        echo("</li>");
-                        echo("<li>"); 
-                        echo userButton("profile.php"); 
-                        echo("</li>");
-                    }
-                }else{
-                    echo("<li>"); 
-                    echo userButton("login.php"); 
-                    echo("</li>");
-                }
-            ?>
-    
-            <li><?php echo regularButton("","PT")?></li>  
-            <li><?php echo regularButton("","Portugal")?></li>
-
-        </ul>   
+                ?>
         
-    </nav>
+                <li><?php echo regularButton("","PT")?></li>  
+                <li><?php echo regularButton("","Portugal")?></li>
+
+            </ul>   
+            
+        </nav>
+        
+    </header>

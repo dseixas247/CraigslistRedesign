@@ -30,6 +30,8 @@
     border-radius: 5px;
     border: 0; 
     height: 10vh;
+    min-width: 120px;
+    width: 10vw;
     text-align: center;
     align-content: center;
 

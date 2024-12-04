@@ -14,5 +14,5 @@
 }
 
 #dangerButton{
-    background-color: #d92121;
+    background-color: var(--dangerAccent);
 }
