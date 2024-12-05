@@ -6,6 +6,7 @@
    justify-content: space-around;
 
    padding: 20px;
+   margin: 10px;
    background-color: white;
    border: 2px solid var(--mainAccent);
 
@@ -56,11 +57,11 @@
    justify-content: center;
  }
 
- .changeLeft * * {
+ .changeLeftLogin * * {
    border-radius: 5px 0px 0px 0px !important;
  }
 
- .changeRight * * {
+ .changeRightLogin * * {
    background-color: var(--mainBackground) !important;
    color: var(--mainAccent) !important;
    border-radius: 0px 5px 0px 0px !important;
@@ -84,7 +85,7 @@
    background-color: white;
    margin-left: 10px;
    margin-right: 10px;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
    border: 2px solid var(--mainAccent);
    color: var(--mainAccent);
    border-radius: 5px;

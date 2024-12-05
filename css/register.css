@@ -1,0 +1,106 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid var(--mainAccent);
+
+    width: fit-content;
+}
+
+.externalLogin {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.externalLogin * {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.seperator {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 2px solid var(--mainAccent); 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+} 
+
+.seperator span { 
+    background: white; 
+    padding:0 10px; 
+}
+
+.changeButtons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--mainAccent);
+}
+
+.changeButtons * {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.changeLeftRegister * * {
+    background-color: var(--mainBackground) !important;
+    color: var(--mainAccent) !important;
+    border-radius: 5px 0px 0px 0px !important;
+}
+
+.changeRightRegister * * {
+    border-radius: 0px 5px 0px 0px !important;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--mainBackground);
+    border-radius: 10px;
+}
+
+.loginForm label {
+    margin: 10px;
+    color: var(--mainAccent);
+    font-weight: bold;
+}
+
+.loginForm input {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--mainAccent);
+    color: var(--mainAccent);
+    border-radius: 5px;
+    padding: 5px;
+    width: 20vw;
+}
+
+.loginForm button {
+    color: var(--textLight);
+    font-size: medium;
+    font-weight: bold;
+
+    background-color: var(--mainAccent);
+
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+    border: 0;
+}

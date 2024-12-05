@@ -10,27 +10,33 @@
         ?> 
     </div>
     <div class="seperator"><span>ou</span></div>
-    <form class="loginForm" action="postHandlers/loginUser.php" method="post">
+    <form class="loginForm" action="postHandlers/registerUser.php" method="post">
         <div class="changeButtons">
-            <div class="changeLeftLogin">
+            <div class="changeLeftRegister">
                 <?php
                     require_once 'components/buttons.php';
-                    echo regularButton("", "Entrar");
+                    echo regularButton("login.php", "Entrar");
                 ?>
             </div>
-            <div class="changeRightLogin">
+            <div class="changeRightRegister">
                 <?php
                     require_once 'components/buttons.php';
-                    echo regularButton("register.php", "Criar Conta");
+                    echo regularButton("", "Criar Conta");
                 ?>
             </div>
         </div>
+
+        <label id="formLabel" for="name">Nome</label>
+        <input type="text" name="name">
 
         <label id="formLabel" for="email">Email</label>
         <input type="email" name="email">
         
         <label id="formLabel" for="pass">Palavra-passe</label>
         <input type="password" name="pass">
+
+        <label id="formLabel" for="passConfirm">Confirmar Palavra-passe</label>
+        <input type="password" name="passConfirm">
         
         <button id="button" type="submit" name="submit">Entrar</button>
     </form>
