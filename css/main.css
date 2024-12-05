@@ -11,6 +11,8 @@
 html, body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     font-family: "Open Sans","Helvetica","Arial",sans-serif;
     margin: 0px;
 }

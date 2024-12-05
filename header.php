@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/54b79dfd71.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/searchbar.css">
