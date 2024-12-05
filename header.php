@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/searchbar.css">
