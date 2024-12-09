@@ -12,15 +12,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://kit.fontawesome.com/54b79dfd71.js" crossorigin="anonymous"></script>
-
+    
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
+    
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="css/header.css">
+
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/searchbar.css">
     <link rel="stylesheet" href="css/category.css">
     <link rel="stylesheet" href="css/posting.css">
+    <link rel="stylesheet" href="css/alert.css">
 
     <title>Craigslist</title>
 
