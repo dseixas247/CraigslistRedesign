@@ -34,6 +34,26 @@
         
         <button id="button" type="submit" name="submit">Entrar</button>
     </form>
+
+    <?php
+        require_once 'components/alert.php';
+
+        if(isset($_GET["error"])){
+            if($_GET["error"]=="emptyInput"){
+                echo errorAlert("Por favor preenche os campos todos");
+            }
+            if($_GET["error"]=="userDoesntExist"){
+                echo errorAlert("Email não se encontra registado");
+            }
+            if($_GET["error"]=="wrongPass"){
+                echo errorAlert("A palavra-passe está errada");
+            }
+            if($_GET["error"]=="none"){
+                echo "<p id='success'>Login efetuado com sucesso!</p>";
+            }
+        }
+    ?>
+
 </main>
 
 <?php include_once 'footer.php'; ?>

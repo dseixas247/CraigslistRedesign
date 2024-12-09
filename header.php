@@ -43,29 +43,19 @@
                 </li>
 
                 <?php
-                    if(isset($_SESSION["type"])){
-                        if($_SESSION["type"] == "admin"){
-                            echo("<li>"); 
-                            echo regularButton("backend.php","Gerir"); 
-                            echo("</li>");
-                            echo("<li>"); 
-                            echo regularButton("postHandlers/logoutUser.php","Logout"); 
-                            echo("</li>");
-                        }
-                        else if($_SESSION["type"] == "client"){
-                            echo("<li>"); 
-                            echo regularButton("createPosting.php","Criar Anúncio"); 
-                            echo("</li>");
-                            echo("<li>"); 
-                            echo favoritesButton("favorites.php"); 
-                            echo("</li>");
-                            echo("<li>"); 
-                            echo chatButton("chat.php"); 
-                            echo("</li>");
-                            echo("<li>"); 
-                            echo userButton("profile.php"); 
-                            echo("</li>");
-                        }
+                    if(isset($_SESSION["email"])){
+                        echo("<li>"); 
+                        echo regularButton("createPosting.php","Criar Anúncio"); 
+                        echo("</li>");
+                        echo("<li>"); 
+                        echo favoritesButton("favorites.php"); 
+                        echo("</li>");
+                        echo("<li>"); 
+                        echo chatButton("chat.php"); 
+                        echo("</li>");
+                        echo("<li>"); 
+                        echo userButton("profile.php"); 
+                        echo("</li>");
                     }else{
                         echo("<li>"); 
                         echo userButton("login.php"); 
