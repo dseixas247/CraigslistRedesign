@@ -12,15 +12,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://kit.fontawesome.com/54b79dfd71.js" crossorigin="anonymous"></script>
-
+    
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
+    
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="css/header.css">
+
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/searchbar.css">
     <link rel="stylesheet" href="css/category.css">
     <link rel="stylesheet" href="css/posting.css">
+    <link rel="stylesheet" href="css/alert.css">
 
     <title>Craigslist</title>
 
@@ -40,29 +43,19 @@
                 </li>
 
                 <?php
-                    if(isset($_SESSION["type"])){
-                        if($_SESSION["type"] == "admin"){
-                            echo("<li>"); 
-                            echo regularButton("backend.php","Gerir"); 
-                            echo("</li>");
-                            echo("<li>"); 
-                            echo regularButton("postHandlers/logoutUser.php","Logout"); 
-                            echo("</li>");
-                        }
-                        else if($_SESSION["type"] == "client"){
-                            echo("<li>"); 
-                            echo regularButton("createPosting.php","Criar Anúncio"); 
-                            echo("</li>");
-                            echo("<li>"); 
-                            echo favoritesButton("favorites.php"); 
-                            echo("</li>");
-                            echo("<li>"); 
-                            echo chatButton("chat.php"); 
-                            echo("</li>");
-                            echo("<li>"); 
-                            echo userButton("profile.php"); 
-                            echo("</li>");
-                        }
+                    if(isset($_SESSION["email"])){
+                        echo("<li>"); 
+                        echo regularButton("createPosting.php","Criar Anúncio"); 
+                        echo("</li>");
+                        echo("<li>"); 
+                        echo favoritesButton("favorites.php"); 
+                        echo("</li>");
+                        echo("<li>"); 
+                        echo chatButton("chat.php"); 
+                        echo("</li>");
+                        echo("<li>"); 
+                        echo userButton("profile.php"); 
+                        echo("</li>");
                     }else{
                         echo("<li>"); 
                         echo userButton("login.php"); 

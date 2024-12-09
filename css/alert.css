@@ -1,0 +1,34 @@
+.errorAlert {
+    padding: 20px;
+    background-color: var(--dangerAccent);
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+}
+
+.successAlert {
+    padding: 20px;
+    background-color: var(--mainAccent);
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
