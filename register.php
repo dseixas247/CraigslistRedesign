@@ -41,7 +41,7 @@
         <label id="formLabel" for="passConfirm">Confirmar Palavra-passe</label>
         <input type="password" name="passRepeat">
         
-        <button id="button" type="submit" name="submit">Entrar</button>
+        <button id="button" type="submit" name="submit">Criar</button>
     </form>
 
     <?php
