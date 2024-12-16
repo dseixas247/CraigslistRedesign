@@ -121,3 +121,21 @@ input::-webkit-search-cancel-button {
 
     cursor: pointer;
 }
+
+.imageInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.imageInput #userImage {
+    margin: 0px;
+}
+
+.imageInput input {
+    margin: 0px;
+    margin-left: 10px;
+    width: 100%;
+    height: fit-content;
+}

@@ -30,6 +30,6 @@ updateUserPass($db, $email, $pass, $new);
 
 }
 else{
-header("location: ../register.php");
+header("location: ../editPass.php");
 exit();
 }

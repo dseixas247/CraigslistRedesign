@@ -19,7 +19,7 @@
 
             echo("<div class='userActions'>");
             echo regularButton("", "Meus Anúncios");
-            echo regularButton("", "Editar Perfil");
+            echo regularButton("editProfile.php", "Editar Perfil");
             echo regularButton("editPass.php", "Alterar Palavra-passe");
             echo regularButton("postHandlers/logoutUser.php", "Fazer Logout");
             echo("</div>");
