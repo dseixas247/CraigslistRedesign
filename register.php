@@ -13,7 +13,7 @@
 
     <div class="seperator"><span>ou</span></div>
 
-    <form class="loginForm" action="postHandlers/registerUser.php" method="post">
+    <form class="form" action="postHandlers/registerUser.php" method="post">
         <div class="changeButtons">
             <div class="changeLeftRegister">
                 <?php

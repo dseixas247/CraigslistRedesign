@@ -10,7 +10,7 @@
         ?> 
     </div>
     <div class="seperator"><span>ou</span></div>
-    <form class="loginForm" action="postHandlers/loginUser.php" method="post">
+    <form class="form" action="postHandlers/loginUser.php" method="post">
         <div class="changeButtons">
             <div class="changeLeftLogin">
                 <?php
