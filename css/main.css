@@ -64,3 +64,60 @@ input::-webkit-search-cancel-button {
     height: 30vh;
     background-image: linear-gradient(45deg, var(--mainAccent), var(--mainBackground));
 }
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+ 
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid var(--mainAccent);
+    border-radius: 10px;
+ 
+    width: 50vw;
+ }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--mainBackground);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.form label {
+    margin: 10px;
+    color: var(--mainAccent);
+    font-weight: bold;
+}
+
+.form input {
+    display: flex;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--mainAccent);
+    color: var(--mainAccent);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.form button {
+    color: var(--textLight);
+    font-size: medium;
+    font-weight: bold;
+
+    background-color: var(--mainAccent);
+
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+    border: 0;
+
+    cursor: pointer;
+}
