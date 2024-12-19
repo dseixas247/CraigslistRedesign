@@ -3,6 +3,7 @@
 if(isset($_POST['submit'])){
 
     require_once '../dbFunctions/user/update.php';
+    require_once '../dbFunctions/user/get.php'
     require_once '../dbFunctions/dbConnect.php';
 
     $name = $_POST['name'];
@@ -22,6 +23,11 @@ if(isset($_POST['submit'])){
 
     if($name == "" || $email == "") {
         header("location: ../editProfile.php?error=emptyInput");
+        exit();
+    }
+
+    if(getUser($db, $email) != false && $email != $oldEmail){
+        header("location: ../register.php?error=emailAlreadyUsed");
         exit();
     }
 

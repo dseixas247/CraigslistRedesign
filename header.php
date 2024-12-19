@@ -12,6 +12,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://kit.fontawesome.com/54b79dfd71.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        function changeOptions(category) {
+
+            const comunidadeOptions = document.getElementsByClassName("comunidadeOptions");
+            const imoveisOptions = document.getElementsByClassName("imoveisOptions");
+            const empregosOptions = document.getElementsByClassName("empregosOptions");
+            const vendasOptions = document.getElementsByClassName("vendasOptions");
+            const servicosOptions = document.getElementsByClassName("servicosOptions");
+
+            for (let i = 0; i < comunidadeOptions.length; i++) {
+                comunidadeOptions[i].disabled = true;
+                comunidadeOptions[i].hidden = true;
+            }
+
+            for (let i = 0; i < imoveisOptions.length; i++) {
+                imoveisOptions[i].disabled = true;
+                imoveisOptions[i].hidden = true;
+            }
+
+            for (let i = 0; i < empregosOptions.length; i++) {
+                empregosOptions[i].disabled = true;
+                empregosOptions[i].hidden = true;
+            }
+
+            for (let i = 0; i < vendasOptions.length; i++) {
+                vendasOptions[i].disabled = true;
+                vendasOptions[i].hidden = true;
+            }
+
+            for (let i = 0; i < servicosOptions.length; i++) {
+                servicosOptions[i].disabled = true;
+                servicosOptions[i].hidden = true;
+            }
+
+            document.getElementById("subcategory").disabled = false;
+
+            if(category == "Comunidade") {
+                for (let i = 0; i < comunidadeOptions.length; i++) {
+                    comunidadeOptions[i].disabled = false;
+                    comunidadeOptions[i].hidden = false;
+                }
+            }
+
+            else if(category == "Imóveis") {
+                for (let i = 0; i < imoveisOptions.length; i++) {
+                    imoveisOptions[i].disabled = false;
+                    imoveisOptions[i].hidden = false;
+                }
+            }
+
+            else if(category == "Empregos") {
+                for (let i = 0; i < empregosOptions.length; i++) {
+                    empregosOptions[i].disabled = false;
+                    empregosOptions[i].hidden = false;
+                }
+            }
+
+            else if(category == "Vendas") {
+                for (let i = 0; i < vendasOptions.length; i++) {
+                    vendasOptions[i].disabled = false;
+                    vendasOptions[i].hidden = false;
+                }
+            }
+
+            else if(category == "Serviços") {
+                for (let i = 0; i < servicosOptions.length; i++) {
+                    servicosOptions[i].disabled = false;
+                    servicosOptions[i].hidden = false;
+                }
+            }
+
+            else {
+                document.getElementById("subcategory").disabled = true;
+            }
+
+        }
+
+    </script>
     
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
