@@ -35,6 +35,9 @@
             if($_GET["error"]=="emptyInput"){
                 echo errorAlert("Por favor preencha os campos necessários");
             }
+            if($_GET["error"]=="emailAlreadyUsed"){
+                echo errorAlert("O email já se encontra registado com outra conta");
+            }
             if($_GET["error"]=="fileTypeUnsupported"){
                 echo errorAlert("Formato de imagem não suportado (formatos válidos: .jpg .jpeg .png .pdf)");
             }
