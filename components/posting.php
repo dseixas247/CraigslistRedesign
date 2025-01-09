@@ -1,21 +1,21 @@
 <?php
 
-    function posting($posting){
+    function posting($posting,$image){
         return "<div class='posting'>
             <a id='content' href='posting.php?id=".$posting["id"]."'>
                 <div id='itemPrice'>".$posting["price"]."€</div>
-                <img id='itemImage' src='serverImages/".$posting["image"]."' alt='Posting ".$posting["name"]."'>
-                <div id='itemName'>".$posting["name"]."</div>
+                <img id='itemImage' src='serverImages/".$image["id"]."' alt='Posting ".$posting["title"]."'>
+                <div id='itemName'>".$posting["title"]."</div>
             </a>
         </div>";
     }
 
-    function postingWithActions($posting){
+    function postingWithActions($posting,$image){
         return "<div class='posting'>
             <div id='content'>
                 <div id='itemPrice'>".$posting["price"]."€</div>
-                <img id='itemImage' src='serverImages/".$posting["image"]."' alt='Posting ".$posting["name"]."'>
-                <div id='itemName'>".$posting["name"]."</div>
+                <img id='itemImage' src='serverImages/".$image["id"]."' alt='Posting ".$posting["title"]."'>
+                <div id='itemName'>".$posting["title"]."</div>
             </div>
             <div id='actions'>
                 <a id='view' href='posting.php?id=".$posting["id"]."'>

@@ -18,6 +18,8 @@
 
 #itemImage {
     width: 15vw;
+    height: 15vw;
+    object-fit: cover;
     background-color: var(--mainBackground);
     border: 0px;
     border-radius: 10px;
