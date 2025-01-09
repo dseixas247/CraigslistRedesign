@@ -56,6 +56,17 @@ input::-webkit-search-cancel-button {
     background: var(--mainAccent);
 }
 
+.productListContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    height: 100%;
+}
+
 .searchContainer {
     display: flex;
     align-items: center;

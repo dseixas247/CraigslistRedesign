@@ -18,7 +18,7 @@
             echo("<h2>Olá ".$name."</h2></div>");
 
             echo("<div class='userActions'>");
-            echo regularButton("", "Meus Anúncios");
+            echo regularButton("myPostings.php", "Meus Anúncios");
             echo regularButton("editProfile.php", "Editar Perfil");
             echo regularButton("editPass.php", "Alterar Palavra-passe");
             echo regularButton("postHandlers/logoutUser.php", "Fazer Logout");
