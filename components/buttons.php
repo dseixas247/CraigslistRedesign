@@ -49,4 +49,14 @@
         ";
     }
 
+    function shareButton($link){
+        return "
+            <div class='button'>
+                <a id='regularButton' href='$link'>
+                    <i class='fas fa-share'></i>
+                </a>
+            </div>
+        ";
+    }
+
 ?>

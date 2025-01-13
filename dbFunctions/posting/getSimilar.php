@@ -1,16 +1,16 @@
 <?php
 
-function getImage($db, $id){
+function getSimilarPostings($db, $subcategory, $region){
 
 $stmt = mysqli_stmt_init($db);
-$sql = "SELECT * FROM image WHERE posting = ?;";
+$sql = "SELECT * FROM posting WHERE subcategory = ? AND region = ? ORDER BY timestamp;";
 
 if(!mysqli_stmt_prepare($stmt, $sql)){
     header ("location: ../registo.php?error=stmtfailed");
     exit();
 }
 
-mysqli_stmt_bind_param($stmt, "s", $id);
+mysqli_stmt_bind_param($stmt, "ss", $subcategory, $region);
 mysqli_stmt_execute($stmt);
 
 $resultData = mysqli_stmt_get_result($stmt);
