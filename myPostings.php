@@ -1,6 +1,6 @@
 <?php include_once 'header.php'; ?>
 
-<main>
+<main class="myPostingsContainer">
     <h2>Meus Anúncios</h2>
 
     <div class="productListContainer">
@@ -9,11 +9,15 @@
             require_once 'dbFunctions/dbConnect.php';
             $myPostings = getPostingsByUser($db, $_SESSION['email']); 
 
-            foreach($myPostings as $posting){
-                require_once 'dbFunctions/image/getMainByPosting.php';
-                $image = getMainImageByPosting($db, $posting["id"]);
-                require_once 'components/posting.php';
-                echo postingWithActions($posting,$image);
+            if($myPostings){
+                foreach($myPostings as $posting){
+                    require_once 'dbFunctions/image/getMainByPosting.php';
+                    $image = getMainImageByPosting($db, $posting["id"]);
+                    require_once 'components/posting.php';
+                    echo postingWithActions($posting,$image);
+                }
+            }else{
+                echo("<p>Ainda não tem anúncios publicados</p>");
             }
         ?>
     </div>

@@ -11,7 +11,7 @@
     if(isset($_GET["id"])){
         $posting = getPosting($db, $_GET["id"]);
         if($posting){ 
-            $similar = getSimilarPostings($db, $posting['subcategory'], $posting['region']);
+            $similar = getSimilarPostings($db, $posting['id'], $posting['subcategory'], $posting['region']);
             $user = getUser($db, $posting['user']);
             $mainImage = getMainImageByPosting($db, $_GET["id"]);
             $images = getImage($db, $_GET["id"]);?>
@@ -77,12 +77,10 @@
                         echo("<h2>Anúncios Semelhantes</h2> <div class='similarPostings'>");
 
                         foreach($similar as $posting){
-                            if($posting['id'] != $_GET["id"]){
-                                require_once 'dbFunctions/image/getMainByPosting.php';
-                                $image = getMainImageByPosting($db, $posting['id']);
-                                require_once 'components/posting.php';
-                                echo postingWithActions($posting,$image);
-                            }
+                            require_once 'dbFunctions/image/getMainByPosting.php';
+                            $image = getMainImageByPosting($db, $posting['id']);
+                            require_once 'components/posting.php';
+                            echo postingWithActions($posting,$image);
                         }
 
                         echo("</div></div>");
