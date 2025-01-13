@@ -1,0 +1,132 @@
+.infoHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+    margin: 10px 0px;
+}
+
+.postColumnLeft {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+}
+
+.imagesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    height: fit-content;
+    background-color: var(--darkerBackground);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.secondaryImages {
+    align-self: center;
+}
+
+.postTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--darkerBackground);
+    border-radius: 10px;
+    padding: 15px 10px 15px 10px;
+}
+
+.postTitle h2 {
+    margin: 0px;
+}
+
+.postColumnRight {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    width: 25%;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--darkerBackground);
+    border-radius: 10px;
+}
+
+.userInfoOnPost {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.userInfoOnPost h2 {
+    margin: 0px;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.contactContainer * {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.infoContent {
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--darkerBackground);
+}
+
+.similarContainer {
+    margin: 40px;
+}
+
+.similarPostings {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+#mainImage {
+    width: 20vw;
+    height: 20vw;
+    object-fit: contain;
+    background-color: var(--mainBackground);
+    padding: 10px;
+    margin: 10px;
+    border: 0px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+#postImage {
+    width: 5vw;
+    height: 5vw;
+    object-fit: contain;
+    background-color: var(--mainBackground);
+    padding: 10px;
+    margin: 10px;
+    border: 0px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+#userImageOnPost {
+    width: 100px;
+    border-radius: 100px;
+}
