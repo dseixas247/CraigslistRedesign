@@ -34,7 +34,17 @@
                         </div>
                         
                         <div class="imagesContainer">
-                            <img id="mainImage" src="serverImages/<?=$mainImage['id'];?>" alt="">
+                            <?php
+                                if($mainImage){
+                            ?>
+
+                                <img id="mainImage" src="serverImages/<?=$mainImage['id'];?>" alt="">
+
+                            <?php }else{ ?>
+
+                                <img id="mainImage" src="craigslistImages/craigslist_logo.png" alt="">
+
+                            <?php } ?>
 
                             <div class="secondaryImages">
                                 <?php if($images){

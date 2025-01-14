@@ -75,7 +75,7 @@ if(isset($_POST['submit'])){
     $imagesSize = [$image1Size, $image2Size, $image3Size, $image4Size, $image5Size];
     $allowed = array('jpg', 'jpeg', 'png', 'pdf');
     
-    if($title == "" || $price == "" || $description == "" || $region == "" || $category == "" || $subcategory == "" || $image1 == ""){
+    if($title == "" || $price == "" || $description == "" || $region == "" || $category == "" || $subcategory == ""){
         header("location: ../createPosting.php?error=emptyInput");
         exit();
     }
@@ -107,17 +107,17 @@ if(isset($_POST['submit'])){
     createPosting($db, $postingId, $title, $price, $description, $category, $subcategory, $region, $user, $email, $phone);
 
     // Image 1 Upload
-    $image1Id = uniqid('', true).".".$image1ActualExt;
-    while(getImage($db, $image1Id) != false){
+    if($image1Name != ""){
         $image1Id = uniqid('', true).".".$image1ActualExt;
+        while(getImage($db, $image1Id) != false){
+            $image1Id = uniqid('', true).".".$image1ActualExt;
+        }
+        $destination1 = '../serverImages/'.$image1Id;
+
+        move_uploaded_file($image1TmpName, $destination1);
+
+        createImage($db, $image1Id, $postingId, 1, "");
     }
-    $destination1 = '../serverImages/'.$image1Id;
-
-    move_uploaded_file($image1TmpName, $destination1);
-
-    createImage($db, $image1Id, $postingId, 1, "");
-
-    echo "afterImage1";
 
     // Image 2 Upload
     if($image2Name != ""){
