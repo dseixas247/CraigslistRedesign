@@ -99,7 +99,8 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="css/postingPage.css">
+    <link rel="stylesheet" href="css/viewPosting.css">
+    <link rel="stylesheet" href="css/editPosting.css">
     <link rel="stylesheet" href="css/deletePosting.css">
 
     <link rel="stylesheet" href="css/buttons.css">

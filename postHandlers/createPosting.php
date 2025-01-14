@@ -103,7 +103,6 @@ if(isset($_POST['submit'])){
         $postingId = uniqid('', true);
     }
 
-    echo "beforePosting";
     createPosting($db, $postingId, $title, $price, $description, $category, $subcategory, $region, $user, $email, $phone);
 
     // Image 1 Upload

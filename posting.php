@@ -50,7 +50,7 @@
                                 <?php if($images){
                                         foreach($images as $image){
                                             if($image['position'] != 1){ ?>
-                                    <img id="postImage" src="serverImages/<?=$image['id'];?>" alt="">
+                                    <img id="postingImage" src="serverImages/<?=$image['id'];?>" alt="">
                                 <?php }}} ?>
                             </div>
                         </div>
