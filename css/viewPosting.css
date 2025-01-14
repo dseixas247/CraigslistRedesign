@@ -114,7 +114,7 @@
     align-self: center;
 }
 
-#postImage {
+#postingImage {
     width: 5vw;
     height: 5vw;
     object-fit: contain;

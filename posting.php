@@ -34,13 +34,23 @@
                         </div>
                         
                         <div class="imagesContainer">
-                            <img id="mainImage" src="serverImages/<?=$mainImage['id'];?>" alt="">
+                            <?php
+                                if($mainImage){
+                            ?>
+
+                                <img id="mainImage" src="serverImages/<?=$mainImage['id'];?>" alt="">
+
+                            <?php }else{ ?>
+
+                                <img id="mainImage" src="craigslistImages/craigslist_logo.png" alt="">
+
+                            <?php } ?>
 
                             <div class="secondaryImages">
                                 <?php if($images){
                                         foreach($images as $image){
                                             if($image['position'] != 1){ ?>
-                                    <img id="postImage" src="serverImages/<?=$image['id'];?>" alt="">
+                                    <img id="postingImage" src="serverImages/<?=$image['id'];?>" alt="">
                                 <?php }}} ?>
                             </div>
                         </div>

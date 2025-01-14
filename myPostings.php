@@ -29,6 +29,9 @@
             if($_GET["error"]=="noneDelete"){
                 echo successAlert("Anúncio apagado com successo");
             }
+            if($_GET["error"]=="noneEdit"){
+                echo successAlert("Anúncio atualizado com successo");
+            }
         }
     ?>
 </main>
