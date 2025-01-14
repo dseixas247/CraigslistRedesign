@@ -100,6 +100,7 @@
     <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/postingPage.css">
+    <link rel="stylesheet" href="css/deletePosting.css">
 
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/searchbar.css">
