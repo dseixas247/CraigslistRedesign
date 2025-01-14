@@ -22,15 +22,21 @@
         ?>
     </div>
 
-    <?php
-        require_once 'components/alert.php';
+    <div class="darkBackground">    
+    </div>
 
-        if(isset($_GET["error"])){
-            if($_GET["error"]=="noneDelete"){
-                echo successAlert("Anúncio apagado com successo");
-            }
-        }
-    ?>
+    <div class="windowed">
+        <h2>Quer mesmo apagar o Anúncio?</h2>
+        
+        <form class="form" action="postHandlers/deletePosting.php" method="post">
+            <input type="hidden" name="id" value="<?=$_GET["id"]?>">
+
+            <a href="myPostings.php">Cancelar</a>
+            <button id="button" type="submit" name="submit">Apagar</button>
+        </form>
+
+    </div>
+
 </main>
 
 <?php include_once 'footer.php'; ?>

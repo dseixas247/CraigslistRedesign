@@ -6,7 +6,7 @@ $stmt = mysqli_stmt_init($db);
 $sql = "SELECT * FROM posting WHERE id = ?;";
 
 if(!mysqli_stmt_prepare($stmt, $sql)){
-    header ("location: ../registo.php?error=stmtfailed");
+    header ("location: ../index.php?error=stmtfailed");
     exit();
 }
 
