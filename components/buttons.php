@@ -39,6 +39,16 @@
         ";
     }
 
+    function favoritesButtonActive($link){
+        return "
+            <div class='button'>
+                <a id='activatedButton' href='$link'>
+                    <i class='fas fa-star'></i>
+                </a>
+            </div>
+        ";
+    }
+
     function chatButton($link){
         return "
             <div class='button'>

@@ -28,8 +28,16 @@
                             <h2><?=$posting["title"]?></h2>
 
                             <?php
+                            require_once 'dbFunctions/favorite/get.php';
+                            require_once 'dbFunctions/dbConnect.php';
                             require_once 'components/buttons.php';
-                            echo favoritesButton("");
+
+                            if(getFavorite($db, $posting['id'], $_SESSION['email']) == false){
+                                echo favoritesButton("postHandlers/createFavorite.php?id=".$posting['id']."&user=".$_SESSION['email']);
+                            }else{
+                                echo favoritesButtonActive("postHandlers/createFavorite.php?id=".$posting['id']."&user=".$_SESSION['email']);
+                            }
+                            
                             ?>
                         </div>
                         

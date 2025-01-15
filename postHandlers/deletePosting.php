@@ -3,11 +3,14 @@
 if(isset($_POST['submit'])){
 
     require_once '../dbFunctions/posting/delete.php';
+    require_once '../dbFunctions/favorite/deleteByPosting.php';
     require_once '../dbFunctions/image/get.php';
     require_once '../dbFunctions/image/delete.php';
     require_once '../dbFunctions/dbConnect.php';
 
     deletePosting($db, $_POST['id']);
+
+    deleteFavoritesByPosting($db, $_POST['id']);
 
     $images = getImage($db, $_POST["id"]);
 
