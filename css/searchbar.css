@@ -8,10 +8,29 @@
     border-radius: 5px;
 }
 
+.searchbar label {
+    color: var(--mainAccent);
+    text-decoration: none;
+    font-weight: bold;
+
+    width: fit-content;
+    padding: 8px;
+    border: 0;
+    border-radius: 5px 0px 0px 5px;
+    background-color: var(--darkerBackground);
+}
+
 .inputContainer {
     display: flex;
     flex-direction: row;
     margin: 10px;
+}
+
+.filterContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
 }
 
 #searchInput {
@@ -48,6 +67,79 @@
 }
 
 #regionInput:focus {
+    outline: none;
+}
+
+#filterCategory, #filterSubcategory {
+    color: var(--textLight);
+    text-decoration: none;
+    font-weight: bold;
+
+    width: fit-content;
+    margin-right: 10px;
+    padding: 8px;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--secondaryAccent);
+}
+
+#filterCategory:hover, #filterSubcategory:hover {
+    cursor: pointer;
+}
+
+#filterCategory:focus, #filterSubcategory:focus {
+    outline: none;
+}
+
+#filterPriceMin {
+    color: var(--mainAccent);
+    text-decoration: none;
+    font-weight: bold;
+
+    width: fit-content;
+    padding: 9.5px;
+    border: 0;
+    border-radius: 0px;
+    background-color: var(--textLight);
+}
+
+#priceBetween {
+    color: var(--mainAccent);
+    text-decoration: none;
+    font-weight: bold;
+
+    width: fit-content;
+    padding: 8px;
+    border: 0;
+    border-radius: 0px;
+    background-color: var(--darkerBackground);
+}
+
+#filterPriceMax {
+    color: var(--mainAccent);
+    text-decoration: none;
+    font-weight: bold;
+
+    width: fit-content;
+    padding: 9.5px;
+    border: 0;
+    border-radius: 0px;
+    background-color: var(--textLight);
+}
+
+#priceEnd {
+    color: var(--mainAccent);
+    text-decoration: none;
+    font-weight: bold;
+
+    width: fit-content;
+    padding: 8px;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--darkerBackground);
+}
+
+#filterPriceMin:focus, #filterPriceMax:focus  {
     outline: none;
 }
 

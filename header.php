@@ -102,6 +102,7 @@
     <link rel="stylesheet" href="css/viewPosting.css">
     <link rel="stylesheet" href="css/editPosting.css">
     <link rel="stylesheet" href="css/deletePosting.css">
+    <link rel="stylesheet" href="css/search.css">
 
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/searchbar.css">

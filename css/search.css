@@ -1,0 +1,16 @@
+.searchPage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.searchResultsContainer {
+    margin: 10px;
+}
+
+.searchResults {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
