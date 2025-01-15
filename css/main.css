@@ -2,6 +2,7 @@
     --mainAccent: #6A2983;
     --secondaryAccent: #945ea9;
     --darkerAccent: #49225B;
+    --starAccent: #fad400;
     --dangerAccent: #d92121;
     --mainBackground: #F5EBFA;
     --darkerBackground: #E7DBEF;
@@ -62,7 +63,7 @@ input::-webkit-search-cancel-button {
     background: var(--mainAccent);
 }
 
-.myPostingsContainer {
+.myPostingsContainer, .myFavoritesContainer{
     display: flex;
     flex-direction: column;
 

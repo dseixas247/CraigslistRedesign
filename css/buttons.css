@@ -13,6 +13,11 @@
     background-color: var(--mainAccent);
 }
 
+#activatedButton{
+    background-color: var(--mainAccent);
+    color: var(--starAccent);
+}
+
 #dangerButton{
     background-color: var(--dangerAccent);
 }
