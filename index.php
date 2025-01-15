@@ -2,9 +2,9 @@
 
 <main>
     <div class="searchContainer">
-        <?php include_once 'components/searchbar.php'; echo searchbar();?>
+        <?php require_once 'components/searchbar.php'; echo searchbar();?>
     </div>
-    <?php include_once 'components/category.php'; 
+    <?php require_once 'components/category.php'; 
         echo category("Comunidade", ["Acolhimento de Crianças", "Animais", "Artistas", "Atividades", "Aulas", "Compartilha de Carro", "Conexões Perdidas", "Eventos", "Músicos", "Perdidos", "Voluntários"]);
         echo category("Imóveis", ["Aluguéis de Férias", "Apartamentos e Moradias", "Escritórios e Comerciais", "Estacionamentos", "Moradias Procuradas", "Quartos Procurados", "Quartos", "Troca de Casa", "Venda de Imóveis"]);
         echo category("Empregos", ["Administração", "Alimentação e Hospedagem", "Arquitetura", "Beleza", "Ciência", "Contabilidade", "Educação", "Fabricação", "Governo", "Gravação e Edição", "Imobiliária", "Legal e Paralegal", "Marketing", "Informática", "Recursos Humanos", "Saúde", "Segurança", "Software", "Suporte Técnico", "Transporte", "Tv, Filme e Video", "Negócio"]);
