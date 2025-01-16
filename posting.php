@@ -32,12 +32,15 @@
                             require_once 'dbFunctions/dbConnect.php';
                             require_once 'components/buttons.php';
 
-                            if(getFavorite($db, $posting['id'], $_SESSION['email']) == false){
-                                echo favoritesButton("postHandlers/createFavorite.php?id=".$posting['id']."&user=".$_SESSION['email']);
+                            if(isset($_SESSION['email'])){
+                                if(getFavorite($db, $posting['id'], $_SESSION['email']) == false){
+                                    echo favoritesButton("postHandlers/createFavorite.php?id=".$posting['id']."&user=".$_SESSION['email']);
+                                }else{
+                                    echo favoritesButtonActive("postHandlers/createFavorite.php?id=".$posting['id']."&user=".$_SESSION['email']);
+                                }
                             }else{
-                                echo favoritesButtonActive("postHandlers/createFavorite.php?id=".$posting['id']."&user=".$_SESSION['email']);
+                                echo favoritesButton("login.php");
                             }
-                            
                             ?>
                         </div>
                         
