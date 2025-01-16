@@ -3,7 +3,7 @@
 if(isset($_POST['submit'])){
 
     require_once '../dbFunctions/user/update.php';
-    require_once '../dbFunctions/user/get.php'
+    require_once '../dbFunctions/user/get.php';
     require_once '../dbFunctions/dbConnect.php';
 
     $name = $_POST['name'];

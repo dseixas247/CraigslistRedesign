@@ -66,7 +66,11 @@
 
                     <div class="postColumnRight">
                         <div class="userInfoOnPost">
-                            <img id="userImageOnPost" src="serverImages/<?=$user['image'];?>" alt="">
+                            <?php if($user['image'] == ""):?>
+                                <img id="userImageOnPost" src="craigslistImages/userDefault.jpg" alt="">
+                            <?php else:?>
+                                <img id="userImageOnPost" src="serverImages/<?=$user['image'];?>" alt="">
+                            <?php endif?>
                             <h2><?=$user["name"]?></h2>
                         </div>
                         <div class="contactContainer">
