@@ -12,8 +12,8 @@
 html, body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: auto;
+    justify-content: flex-start;
+    height: 100%;
     font-family: "Open Sans","Helvetica","Arial",sans-serif;
     margin: 0px;
 }
@@ -100,7 +100,7 @@ input::-webkit-search-cancel-button {
     justify-content: space-around;
  
     padding: 20px;
-    margin:40px;
+    margin: 10px;
     background-color: white;
     border: 2px solid var(--mainAccent);
     border-radius: 10px;
