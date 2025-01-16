@@ -63,7 +63,7 @@
         return "
             <div class='button'>
                 <a id='regularButton' href='$link'>
-                    <i class='fas fa-share'></i>
+                    <i class='fa fa-share-square-o'></i>
                 </a>
             </div>
         ";
