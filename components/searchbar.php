@@ -97,8 +97,8 @@
                         </select>
                     </div>
                     <div class='filterContainer'>
-                        <label id='formLabel' for='filterCategory'>Categoria</label>
-                        <select id='filterCategory' name='category' onchange='changeOptions(value);'>
+                        <label id='formLabel' for='category'>Categoria</label>
+                        <select id='category' name='category' onchange='changeOptions(value);'>
                             <option value=''>Selecione uma opção</option>
                             <option value='Comunidade' ".$Comunidade.">Comunidade</option>
                             <option value='Imóveis' ".$Imoveis.">Imóveis</option>
@@ -107,8 +107,8 @@
                             <option value='Serviços' ".$Servicos.">Serviços</option>
                         </select>";
 
-        $component .=   "<label id='formLabel' for='filterSubcategory'>Sub-Categoria</label> 
-                        <select id='filterSubcategory' name='subcategory'>
+        $component .=   "<label id='formLabel' for='subcategory'>Sub-Categoria</label> 
+                        <select id='subcategory' name='subcategory'>
                             <option value=''>Selecione uma opção</option>";
 
         $comunidade = ["Acolhimento de Crianças", "Animais", "Artistas", "Atividades", "Aulas", "Compartilha de Carro", "Conexões Perdidas", "Eventos", "Músicos", "Perdidos", "Voluntários"];

@@ -70,7 +70,7 @@
     outline: none;
 }
 
-#filterCategory, #filterSubcategory {
+.filterContainer #category, .filterContainer #subcategory {
     color: var(--textLight);
     text-decoration: none;
     font-weight: bold;
@@ -83,11 +83,11 @@
     background-color: var(--secondaryAccent);
 }
 
-#filterCategory:hover, #filterSubcategory:hover {
+.filterContainer #category:hover, .filterContainer #cubcategory:hover {
     cursor: pointer;
 }
 
-#filterCategory:focus, #filterSubcategory:focus {
+.filterContainer #category:focus, .filterContainer #subcategory:focus {
     outline: none;
 }
 

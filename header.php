@@ -54,6 +54,7 @@
                 for (let i = 0; i < comunidadeOptions.length; i++) {
                     comunidadeOptions[i].disabled = false;
                     comunidadeOptions[i].hidden = false;
+                    document.getElementById("subcategory").value = "";
                 }
             }
 
@@ -61,6 +62,7 @@
                 for (let i = 0; i < imoveisOptions.length; i++) {
                     imoveisOptions[i].disabled = false;
                     imoveisOptions[i].hidden = false;
+                    document.getElementById("subcategory").value = "";
                 }
             }
 
@@ -68,6 +70,7 @@
                 for (let i = 0; i < empregosOptions.length; i++) {
                     empregosOptions[i].disabled = false;
                     empregosOptions[i].hidden = false;
+                    document.getElementById("subcategory").value = "";
                 }
             }
 
@@ -75,6 +78,7 @@
                 for (let i = 0; i < vendasOptions.length; i++) {
                     vendasOptions[i].disabled = false;
                     vendasOptions[i].hidden = false;
+                    document.getElementById("subcategory").value = "";
                 }
             }
 
@@ -82,11 +86,13 @@
                 for (let i = 0; i < servicosOptions.length; i++) {
                     servicosOptions[i].disabled = false;
                     servicosOptions[i].hidden = false;
+                    document.getElementById("subcategory").value = "";
                 }
             }
 
             else {
                 document.getElementById("subcategory").disabled = true;
+                document.getElementById("subcategory").value = "";
             }
 
         }
