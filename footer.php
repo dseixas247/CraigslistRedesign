@@ -1,7 +1,6 @@
-    <div>
-      <footer>
+     <footer>
+        <p>&copy;2025 Craigslist</p>
       </footer>
-    </div>
   </body>
 
 </html>
